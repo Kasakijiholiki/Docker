@@ -5,8 +5,8 @@ pipeline{
      stage("build")
     {
      steps{
-      sh 'docker build -t tong .'
-      sh 'docker run -dp 2000:2000 tong'
+      sh 'sudo dsocker build -t tong .'
+      sh 'sudo docker run -dp 2000:2000 tong'
      }
  
     }
