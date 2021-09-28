@@ -6,7 +6,7 @@ pipeline{
     {
      steps{
       sh 'docker build -t tong .'
-      sh 'docker run -dp 2000:2000 tong'
+      sh 'docker run -dp 3000:3000 tong'
      }
     }
   }
