@@ -5,6 +5,9 @@ pipeline{
      stage("build")
     {
      steps{
+      sh 'sudo groupadd docker'
+      sh 'sudo usermod -aG docker $USE'
+      sh 'newgrp docker'
       sh 'docker build -t tong .'
       sh 'docker run -dp 2000:2000 tong'
      }
