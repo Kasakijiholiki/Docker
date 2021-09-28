@@ -8,6 +8,7 @@ pipeline{
       sh 'docker build -t tong .'
       sh 'docker run -dp 3000:3000 tong'
       sh 'docker container ls'
+      sh 'curl https://www.google.com'
       sh 'curl http://localhost:3000'
      }
     }
