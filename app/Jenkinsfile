@@ -12,7 +12,8 @@ pipeline{
       sh 'ls'
       sh 'curl http://localhost:2000'
       sh 'docker ps'
-      sh 'curl http://localhost:3000'
+      sh 'docker run hello-world'
+      sh 'docker ps'
       sh 'docker ps'
       
      }
