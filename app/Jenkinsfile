@@ -7,6 +7,7 @@ pipeline{
      steps{
       sh 'docker build -t tong .'
       sh 'docker run -dp 3000:3000 tong'
+      sh 'docker container ls'
       sh 'curl http://localhost:3000'
      }
     }
