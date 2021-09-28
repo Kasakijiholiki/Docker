@@ -4,8 +4,11 @@ pipeline{
   {
      stage("build")
     {
+     steps{
       sh 'docker build -t tong .'
-      sh 'docker run -dp 2000:2000 tong'
+      sh 'docker run -dp 2000:2000 tong
+     }
+'
     }
   }
 }
