@@ -10,7 +10,9 @@ pipeline{
       sh 'docker container ls'
       sh 'docker ps'
       sh 'ls'
-      sh 'docker port tong'
+      sh 'curl http://localhost:2000'
+      sh 'docker ps'
+      sh 'curl http://localhost:3000'
       sh 'docker ps'
       
      }
